@@ -19,10 +19,18 @@ function onSubmit2(e){
 
     const formData = new FormData(form);
 
-    const item = formData.get('item');
-    const priority = formData.get('priority');
+    //const item = formData.get('item');
+    //const priority = formData.get('priority');
 
-    console.log(item, priority);
+    const entries = formData.entries();
+
+    for (let entry of entries){
+        console.log(entry[1]);
+    }
+
+
+    //console.log(item, priority);
+    //console.log(entries);
 }
 
 
